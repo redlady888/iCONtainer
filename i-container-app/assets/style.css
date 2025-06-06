@@ -1,0 +1,352 @@
+/* i-CONtainer App Custom CSS */
+
+/* Main theme colors */
+:root {
+    --primary-color: #8a2be2;
+    --secondary-color: #6a0dad;
+    --background-color: #121212;
+    --card-background: #1e1e1e;
+    --text-color: #ffffff;
+    --text-secondary: #cccccc;
+    --warning-color: #ffa500;
+    --danger-color: #ff4500;
+    --success-color: #00cc66;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* General styling */
+.stApp {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sidebar styling */
+.css-1d391kg, .css-1cypcdb {
+    background-color: var(--card-background);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, var(--primary-color), #9370db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all var(--transition-speed);
+    box-shadow: var(--box-shadow);
+}
+
+.stButton>button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.stButton>button:active {
+    transform: translateY(0);
+    box-shadow: var(--box-shadow);
+}
+
+/* Status tags */
+.status-tag {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 4px 0;
+    transition: all var(--transition-speed);
+}
+
+.status-normal {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.status-warning {
+    background-color: var(--warning-color);
+    color: black;
+}
+
+.status-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Product card */
+.product-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin: 12px 0;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+    transition: all var(--transition-speed);
+}
+
+.product-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Selected product */
+.selected-product {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 8px 12px;
+    background-color: rgba(138, 43, 226, 0.1);
+    border-radius: var(--border-radius);
+    margin: 4px 0;
+    display: block;
+}
+
+/* Logo container */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slogan */
+.slogan {
+    font-style: italic;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Traffic light */
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.3;
+    transition: all 0.5s ease;
+}
+
+.red {
+    background-color: #ff4500;
+}
+
+.yellow {
+    background-color: #ffa500;
+}
+
+.green {
+    background-color: #00cc66;
+}
+
+.active {
+    opacity: 1;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Analysis results container */
+.results-container {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: var(--box-shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+/* Slider customization */
+.stSlider > div > div > div {
+    background-color: var(--primary-color) !important;
+}
+
+/* Input fields */
+.stTextInput > div > div > input {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: 1px solid #444;
+    border-radius: var(--border-radius);
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+/* Selectbox */
+.stSelectbox > div > div > div {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border: 1px solid #444;
+    border-radius: var(--border-radius);
+}
+
+/* Divider */
+.stDivider {
+    margin: 2rem 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Subscription plan cards */
+.subscription-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin: 8px 0;
+    border-left: 4px solid var(--primary-color);
+    transition: all var(--transition-speed);
+    cursor: pointer;
+}
+
+.subscription-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.subscription-card.selected {
+    border: 2px solid var(--primary-color);
+    background-color: rgba(138, 43, 226, 0.1);
+}
+
+.subscription-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.subscription-period {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Account info */
+.account-info {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.account-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.account-name {
+    font-weight: 500;
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.loading div {
+    position: absolute;
+    border: 4px solid var(--primary-color);
+    opacity: 1;
+    border-radius: 50%;
+    animation: loading 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.loading div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes loading {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .traffic-light {
+        width: 60px;
+    }
+    
+    .light {
+        width: 40px;
+        height: 40px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .slogan {
+        font-size: 1rem;
+    }
+    
+    .subscription-price {
+        font-size: 1.2rem;
+    }
+}
+

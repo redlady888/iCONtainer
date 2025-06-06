@@ -1,0 +1,39 @@
+{
+  "meat": {
+    "CO2": {"warning": 5000, "spoiled": 10000},
+    "NH3": {"warning": 15, "spoiled": 30},
+    "H2S": {"warning": 5, "spoiled": 10},
+    "VOCs": {"warning": 1000, "spoiled": 2000}
+  },
+  "eggs": {
+    "CO2": {"warning": 3000, "spoiled": 7000},
+    "NH3": {"warning": 20, "spoiled": 40},
+    "H2S": {"warning": 3, "spoiled": 8},
+    "VOCs": {"warning": 800, "spoiled": 1500}
+  },
+  "dairy": {
+    "CO2": {"warning": 4000, "spoiled": 8000},
+    "NH3": {"warning": 10, "spoiled": 25},
+    "H2S": {"warning": 2, "spoiled": 6},
+    "VOCs": {"warning": 900, "spoiled": 1800}
+  },
+  "fruits": {
+    "CO2": {"warning": 2000, "spoiled": 5000},
+    "NH3": {"warning": 5, "spoiled": 15},
+    "H2S": {"warning": 1, "spoiled": 4},
+    "VOCs": {"warning": 700, "spoiled": 1400}
+  },
+  "vegetables": {
+    "CO2": {"warning": 2500, "spoiled": 6000},
+    "NH3": {"warning": 8, "spoiled": 20},
+    "H2S": {"warning": 2, "spoiled": 5},
+    "VOCs": {"warning": 800, "spoiled": 1600}
+  },
+  "rice": {
+    "CO2": {"warning": 1500, "spoiled": 4000},
+    "NH3": {"warning": 10, "spoiled": 25},
+    "H2S": {"warning": 1, "spoiled": 3},
+    "VOCs": {"warning": 600, "spoiled": 1200}
+  }
+}
+

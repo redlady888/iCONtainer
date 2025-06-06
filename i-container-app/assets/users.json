@@ -1,0 +1,54 @@
+{
+    "demo_user": {
+        "username": "Demo User",
+        "email": "demo@i-container.com",
+        "subscription": "$1/month",
+        "subscription_start": "2025-05-22",
+        "subscription_end": "2025-06-21",
+        "products": [
+            "i-CONtainer",
+            "User"
+        ],
+        "payment_history": [
+            {
+                "date": "2025-05-22",
+                "amount": "$1.00",
+                "description": "Monthly subscription"
+            }
+        ]
+    },
+    "premium_user": {
+        "username": "Premium User",
+        "email": "premium@i-container.com",
+        "subscription": "$500/3-years",
+        "subscription_start": "2025-06-07",
+        "subscription_end": "2028-06-06",
+        "products": [
+            "i-CONtainer",
+            "Smart Shelf",
+            "Fridge"
+        ],
+        "payment_history": [
+            {
+                "date": "2025-05-07",
+                "amount": "$500.00",
+                "description": "3-year subscription"
+            },
+            {
+                "date": "2025-06-06",
+                "amount": "$500",
+                "description": "3-years subscription"
+            },
+            {
+                "date": "2025-06-07",
+                "amount": "$500",
+                "description": "3-years subscription"
+            },
+            {
+                "date": "2025-06-07",
+                "amount": "$500",
+                "description": "3-years subscription"
+            }
+        ]
+    }
+}
